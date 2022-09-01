@@ -19,10 +19,10 @@ Para isso, após fazer o calcula da velocidade, você deve transformar a unidade
 \
 Considere:
 
-**distPercorrida:** 500 m \
+**distPercorrida:** 50 m \
 **tempo:** 10 s
 
-$$ Velocidade = \frac{500}{10} $$
+$$ Velocidade = \frac{50}{10} $$
 
 $$ Velocidade = 5 m/s $$
 
@@ -38,9 +38,9 @@ O seu programa deverá imprimir o montante com base no input recebido.
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `lógica` `módulo 1` `exercício de casa` `matemática` `nodeJS`
