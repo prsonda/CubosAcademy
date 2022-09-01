@@ -26,7 +26,7 @@ $$ C ≅ 6,3 $$
 
 $$ A = piR^2 $$
 
-$$ A ≅ 3,14 $$ // fiz a correção pois o valor apresentado estava incorreto
+$$ A ≅ 3,14 $$
 
 OBS: Nós sabemos que não falamos sobre o número $pi$ nas aulas. O objetivo aqui é que vocês aprendam a pesquisar esse ponto específico também. Boa sorte, qualquer coisa é só pedir ajuda para a gente! =)
 

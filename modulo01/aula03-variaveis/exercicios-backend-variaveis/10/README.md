@@ -21,7 +21,10 @@ $$ 5x^2 + 5x + 1 = 0 $$
 
 $$ delta = 5^2 - 4 \* 5 \* 1 $$
 
-$$ delta = 1 $$
+$$
+delta = 25 - 20
+
+$$ delta = 5 $$
 
 Faça um programa que calcula o valor de delta a partir desses coeficientes em uma equação do segundo grau com valores a sua escolha.
 
@@ -29,9 +32,10 @@ Faça um programa que calcula o valor de delta a partir desses coeficientes em u
 
 Preencha a checklist para finalizar o exercício:
 
-- [x] Resolver o exercício revendo a aula se necessário
-- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [X] Resolver o exercício revendo a aula se necessário
+- [X] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [X] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [X] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `lógica` `módulo 1` `exercício de casa` `matemática` `nodeJS`
+$$

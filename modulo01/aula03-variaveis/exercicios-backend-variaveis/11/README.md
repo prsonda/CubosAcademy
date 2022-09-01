@@ -6,7 +6,7 @@
 
 Para calcular o volume de uma esfera, utilizamos a seguinte fórmula:
 
-$$ v = \frac{3}{4} \* pi (\frac{d}{2})^3 $$
+$$ v = \frac{4}{3} \* r ^ 3 $$
 
 onde:
 
@@ -19,7 +19,12 @@ Faça um programa que calcula o volume de uma esfera a partir de seu DIÂMETRO. 
 
 Considerando uma esfera com raio 3, ou seja $d = 6$:
 
-$$ v = \frac{3}{4} \* pi (\frac{6}{2})^3 $$
+$$ v = \frac{4}{3} \* 3 ^ 3 $$
+
+$$ v = \frac{4}{3} \* 27 $$
+
+$$ v = \frac{108}{3} $$
+
 $$ v = 36 pi $$
 
 Imprima uma mensagem no seguinte formato com a sua resposta:

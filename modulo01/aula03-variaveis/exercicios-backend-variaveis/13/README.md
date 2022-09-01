@@ -30,7 +30,7 @@ Para um cilindro com:
 
 $$ At = 2pi3(3 + 1) $$
 
-$$ At = 24pi $$
+$$ At ≅ 75pi $$
 
 ---
 
