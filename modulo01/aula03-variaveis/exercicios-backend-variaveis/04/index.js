@@ -3,4 +3,4 @@ let tempo = 5;
 let taxa = 0.125;
 let montante = capital * (1 + taxa) ** tempo;
 
-console.log(montante);
+console.log(`Valor do montante é R$ ${montante.toFixed(2)}`);

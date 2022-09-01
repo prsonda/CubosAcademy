@@ -1,9 +1,9 @@
 let raio = 1;
 
-let perimetro = 2 * Math.PI * raio;
+let comprimento = 2 * Math.PI * raio;
 
-console.log(perimetro);
+console.log(`Comprimento de ${comprimento.toFixed(2)}`);
 
 let area = Math.PI * raio ** 2;
 
-console.log(area);
+console.log(`Área de ${area.toFixed(2)}`);
