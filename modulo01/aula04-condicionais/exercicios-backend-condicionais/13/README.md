@@ -20,7 +20,7 @@ Lembre-se de cuidar para que o valor monetário tenha sempre duas casas decimais
 
 ```javascript
 //tipo de pagamento (dinheiro, credito, debito, cheque).
-const tipoDePagamento = "credito";
+const tipoDePagamento = 'credito';
 
 //valor da mercadoria (centavos)
 const valorDoProduto = 13000;
@@ -46,9 +46,9 @@ Faça commit do programa.
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `lógica` `módulo 1` `exercício de classe` `nodeJS`
