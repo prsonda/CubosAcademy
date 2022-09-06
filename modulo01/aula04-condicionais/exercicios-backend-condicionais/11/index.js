@@ -1,5 +1,5 @@
 //renda mensal do aluno, em centavos.
-const rendaMensalEmCentavos = 300000;
+const rendaMensalEmCentavos = 150000;
 
 // Tempo decorrido de contrato. Se for maior que 60 meses, o aluno não deve mais nada.
 const mesesDecorridos = 12;
