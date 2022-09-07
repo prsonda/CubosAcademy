@@ -4,15 +4,15 @@
 
 ## Exercícios
 
-01. Pedra, papel ou tesoura
-02. Par ou ímpar
-03. Dominó
-04. Dando nome as pedras
-05. Peneira de Vôlei 
-06. Definindo as posições
-07. Isenção de impostos
-08. Montanha Russa Muito Assustadora
-09. Transformar nota em conceito
+1.  Pedra, papel ou tesoura
+2.  Par ou ímpar
+3.  Dominó
+4.  Dando nome as pedras
+5.  Peneira de Vôlei
+6.  Definindo as posições
+7.  Isenção de impostos
+8.  Montanha Russa Muito Assustadora
+9.  Transformar nota em conceito
 10. Identificando caracteres
 11. Valor da parcela do Sucesso Compartilhado
 12. Dia da Semana
@@ -26,9 +26,9 @@
 
 Preencha a checklist para fazer os exercícios:
 
--   [ ] Fazer o fork do repositório para sua conta
--   [ ] Executar `git clone` do seu fork no terminal para clonar o repositório, ou clonar de outra maneira
--   [ ] Após fazer e commitar todos os exercícios fazer o `git push` para seu fork
--   [ ] Copiar a url do seu fork e enviar na plataforma
+- [x] Fazer o fork do repositório para sua conta
+- [x] Executar `git clone` do seu fork no terminal para clonar o repositório, ou clonar de outra maneira
+- [x] Após fazer e commitar todos os exercícios fazer o `git push` para seu fork
+- [x] Copiar a url do seu fork e enviar na plataforma
 
 ###### tags: `módulo 1` `exercícios` `lógica` `matemática` `nodeJS`
