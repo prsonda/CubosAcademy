@@ -1,6 +1,6 @@
 const primeiroNome = 'Mario';
 const sobrenome = '';
-const apelido = '';
+const apelido = 'Bros';
 
 if (apelido) {
   console.log(apelido);
