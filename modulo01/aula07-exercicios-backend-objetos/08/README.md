@@ -14,27 +14,27 @@ c. Se a pessoa tiver mais de um pet, a mensagem deve ser: `Sou Beatriz e tenho 1
 
 ```javascript
 const usuarios = [
-    {
-        nome: "João",
-        pets: [],
-    },
-    {
-        nome: "Ana",
-        pets: ["Pingo", "Lulu"],
-    },
-    {
-        nome: "Beatriz",
-        pets: ["Lessie"],
-    },
-    {
-        nome: "Carlos",
-        pets: ["Farofa", "Salsicha", "Batata"],
-    },
-    {
-        nome: "Antonio",
-        pets: ["Naninha"],
-    },
-]
+  {
+    nome: 'João',
+    pets: [],
+  },
+  {
+    nome: 'Ana',
+    pets: ['Pingo', 'Lulu'],
+  },
+  {
+    nome: 'Beatriz',
+    pets: ['Lessie'],
+  },
+  {
+    nome: 'Carlos',
+    pets: ['Farofa', 'Salsicha', 'Batata'],
+  },
+  {
+    nome: 'Antonio',
+    pets: ['Naninha'],
+  },
+];
 ```
 
 Obs.: O nome da pessoa e a quantidade de pets deve ser dinâmico, de acordo com as informações de cada objeto.
@@ -44,11 +44,7 @@ _Dica: a desestruturação pode facilitar a escrita do código, além de torná-
 _Portanto, o resultado final para o exemplo acima, deverá ser como ilustrado abaixo:_
 
 ```javascript
-`Sou João e não tenho pets`
-`Sou Ana e tenho 2 pets`
-`Sou Beatriz e tenho 1 pet`
-`Sou Carlos e tenho 3 pets`
-`Sou Antônio e tenho 1 pet`
+`Sou João e não tenho pets``Sou Ana e tenho 2 pets``Sou Beatriz e tenho 1 pet``Sou Carlos e tenho 3 pets``Sou Antônio e tenho 1 pet`;
 ```
 
 Faça o teste com outros exemplos.
@@ -59,9 +55,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
