@@ -8,32 +8,32 @@
 
 ```javascript
 const curso = {
-    id: 1234,
-    nome: "Lógica de programação",
-    aulas: [],
-}
+  id: 1234,
+  nome: 'Lógica de programação',
+  aulas: [],
+};
 ```
 
 ### Lista de aulas
 
--   Aula 01
+- Aula 01
 
-    -   Identificador = 01
-    -   Nome da aula = Introdução a programação
+  - Identificador = 01
+  - Nome da aula = Introdução a programação
 
--   Aula 02
+- Aula 02
 
-    -   Identificador = 02
-    -   Nome da aula = Variáveis
+  - Identificador = 02
+  - Nome da aula = Variáveis
 
--   Aula 03
+- Aula 03
 
-    -   Identificador = 03
-    -   Nome da aula = Condicionais
+  - Identificador = 03
+  - Nome da aula = Condicionais
 
--   Aula 04
-    -   Identificador = 04
-    -   Nome da aula = Arrays
+- Aula 04
+  - Identificador = 04
+  - Nome da aula = Arrays
 
 _Lembre-se que após adicionar elementos no array aulas, o resultado final para o exemplo acima, deverá ser como ilustrado abaixo:_
 
@@ -70,9 +70,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
