@@ -20,21 +20,21 @@ O formato do item no carrinho deve serguir o seguinte padrão:
 
 ```javascript
 // clientes
-const patricia = { nome: "Patricia", carrinho: [] }
-const carlos = { nome: "Carlos", carrinho: [] }
-const renato = { nome: "Renato", carrinho: [] }
-const jose = { nome: "José", carrinho: [] }
-const roberto = { nome: "Roberto", carrinho: [] }
+const patricia = { nome: 'Patricia', carrinho: [] };
+const carlos = { nome: 'Carlos', carrinho: [] };
+const renato = { nome: 'Renato', carrinho: [] };
+const jose = { nome: 'José', carrinho: [] };
+const roberto = { nome: 'Roberto', carrinho: [] };
 
 // produtos
-const tv = { nome: "TV Samsung 4K", valorEmCentavos: 129900 }
-const notebook = { nome: "Notebook Dell", valorEmCentavos: 399990 }
-const mouse = { nome: "Mouse MX Master 3", valorEmCentavos: 23000 }
-const teclado = { nome: "Teclado Keychron K8", valorEmCentavos: 50000 }
-const caboUsb = { nome: "Cabo USB 2 Metros", valorEmCentavos: 1990 }
-const carregador = { nome: "Carregador portátil", valorEmCentavos: 4590 }
-const webcam = { nome: "Webcam C920s", valorEmCentavos: 80000 }
-const monitor = { nome: "Monitor LG 29 FHD", valorEmCentavos: 129900 }
+const tv = { nome: 'TV Samsung 4K', valorEmCentavos: 129900 };
+const notebook = { nome: 'Notebook Dell', valorEmCentavos: 399990 };
+const mouse = { nome: 'Mouse MX Master 3', valorEmCentavos: 23000 };
+const teclado = { nome: 'Teclado Keychron K8', valorEmCentavos: 50000 };
+const caboUsb = { nome: 'Cabo USB 2 Metros', valorEmCentavos: 1990 };
+const carregador = { nome: 'Carregador portátil', valorEmCentavos: 4590 };
+const webcam = { nome: 'Webcam C920s', valorEmCentavos: 80000 };
+const monitor = { nome: 'Monitor LG 29 FHD', valorEmCentavos: 129900 };
 ```
 
 a. Adicione uma tv, dois cabos usb e uma webcam para o José
@@ -55,9 +55,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
