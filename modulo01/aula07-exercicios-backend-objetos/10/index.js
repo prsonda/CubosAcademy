@@ -1,3 +1,4 @@
+// inicializa o carrinho vazio
 let carrinho = [];
 
 // clientes
@@ -17,73 +18,60 @@ const carregador = { nome: 'Carregador portátil', valorEmCentavos: 4590 };
 const webcam = { nome: 'Webcam C920s', valorEmCentavos: 80000 };
 const monitor = { nome: 'Monitor LG 29 FHD', valorEmCentavos: 129900 };
 
-const clientes = [patricia, carlos, renato, jose, roberto];
+// produtos comprados por cada cliente
+const produtosPorClientes = [
+  patricia,
+  [teclado, caboUsb, caboUsb, carregador, mouse, monitor],
+  carlos,
+  [notebook, notebook],
+  renato,
+  [webcam, webcam, webcam, webcam, webcam],
+  jose,
+  [tv, caboUsb, caboUsb, webcam],
+  roberto,
+  [webcam, caboUsb, caboUsb, monitor],
+];
 
-for (let cliente of clientes) {
-  if (cliente == patricia) {
-    cliente.carrinho.push({
-      item: teclado,
-      quantidade: 1,
-    });
-    cliente.carrinho.push({
-      item: caboUsb,
-      quantidade: 2,
-    });
-    cliente.carrinho.push({
-      item: carregador,
-      quantidade: 1,
-    });
-    cliente.carrinho.push({
-      item: mouse,
-      quantidade: 1,
-    });
-    cliente.carrinho.push({
-      item: monitor,
-      quantidade: 1,
-    });
-  } else if (cliente == carlos) {
-    cliente.carrinho.push({
-      item: notebook,
-      quantidade: 2,
-    });
-  } else if (cliente == renato) {
-    cliente.carrinho.push({
-      item: webcam,
-      quantidade: 5,
-    });
-  } else if (cliente == jose) {
-    cliente.carrinho.push({
-      item: tv,
-      quantidade: 1,
-    });
-    cliente.carrinho.push({
-      item: caboUsb,
-      quantidade: 2,
-    });
-    cliente.carrinho.push({
-      item: webcam,
-      quantidade: 1,
-    });
-  } else if (cliente == roberto) {
-    cliente.carrinho.push({
-      item: webcam,
-      quantidade: 1,
-    });
-    cliente.carrinho.push({
-      item: caboUsb,
-      quantidade: 2,
-    });
-    cliente.carrinho.push({
-      item: monitor,
-      quantidade: 1,
-    });
-  }
+// percorre o array de podutos comprados por cliente
+for (let index = 0; index < produtosPorClientes.length; index++) {
+  // verifica se o index é inpar pois é onde estão os produtos comprados no array
+  if (index % 2 !== 0) {
+    let total = 0;
 
-  console.log('-=-'.repeat(20));
-  console.log(cliente.nome);
-  for (let item of cliente.carrinho) {
-    console.log(item.item);
-    console.log(item.quantidade);
+    // percorre o array de produtos de acordo com a posição do index
+    for (let produto of produtosPorClientes[index]) {
+      // verifica se o carrinho do cliente está vazio
+      if (produtosPorClientes[index - 1].carrinho.length === 0) {
+        // adiciona o produto no carrinho se o carrinho estiver vazio
+        produtosPorClientes[index - 1].carrinho.push({
+          item: produto,
+          quantidade: 1,
+        });
+      }
+
+      // percorre o objeto dentro do carrinho
+      for (let i of produtosPorClientes[index - 1].carrinho) {
+        i1 = i.item.nome;
+        i2 = i;
+      }
+
+      // verifica se o nome do produto comprado ainda não esta no carrinho e adiciona
+      if (produto.nome !== i1) {
+        produtosPorClientes[index - 1].carrinho.push({
+          item: produto,
+          quantidade: 1,
+        });
+      } else {
+        // caso o produto esteja no carrinho soma a quantidade em 1
+        total += 1;
+        i2.quantidade = total;
+      }
+    }
+
+    // faz a apresentação dos clientes e produtos de forma formatada
+    console.log('-=-'.repeat(20));
+    console.log(produtosPorClientes[index - 1].nome);
+    console.log(produtosPorClientes[index - 1].carrinho);
+    console.log('-=-'.repeat(20));
   }
-  console.log('-=-'.repeat(20));
 }
