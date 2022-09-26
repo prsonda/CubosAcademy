@@ -26,11 +26,35 @@ const carrinho = {
     const resultado = [valorTotal, somaItens];
     return resultado;
   },
-  imprimirResumoDoCarrinho: function () {
+  imprimirResumo: function () {
     console.log(`Cliente: ${carrinho.nomeDoCliente}`);
     console.log(`Total de itens: ${this.calcula()[1]} itens`);
     console.log(`Total a pagar: R$ ${this.calcula()[0].toFixed(2)}`);
   },
 };
 
-carrinho.imprimirResumoDoCarrinho();
+carrinho.imprimirResumo();
+
+function addProdutoAoCarrinho(carrinho, produto) {
+  let encontrado = false;
+  for (prod of carrinho.produtos) {
+    let codigo = prod.id;
+    if (produto.id === codigo) {
+      encontrado = true;
+      prod.qtd += produto.qtd;
+    }
+  }
+  if (!encontrado) {
+    carrinho.produtos.push(produto);
+  }
+}
+
+const novaBermuda = {
+  id: 2,
+  nome: 'Bermuda',
+  qtd: 3,
+  precoUnit: 5000,
+};
+
+addProdutoAoCarrinho(carrinho, novaBermuda);
+carrinho.imprimirResumo();
