@@ -36,7 +36,12 @@ const carro = {
   },
 };
 
+carro.desligar();
 carro.ligar();
+carro.ligar();
+carro.acelerar();
 carro.acelerar();
 carro.desacelerar();
 carro.desligar();
+carro.acelerar();
+carro.desacelerar();
