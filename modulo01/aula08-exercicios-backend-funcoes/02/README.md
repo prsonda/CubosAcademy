@@ -12,28 +12,28 @@ Além dos indicadores de ligado/desligado e de velocidade, este carro deverá po
 
 **a)** Criar o objeto carro com apenas as duas propriedades (neste primeiro passo não é necessário criar os métodos):
 
--   **ligado** (boolean) : que de deverá ser inicializada com valor **false** (desligado).
--   **velocidade** (number) : que deverá ser inicializada com valor **0** (zero).
+- **ligado** (boolean) : que de deverá ser inicializada com valor **false** (desligado).
+- **velocidade** (number) : que deverá ser inicializada com valor **0** (zero).
 
 **b)** Acrescentar neste objeto carro um membro chamado **ligar** que possuirá como valor uma função que implementará a seguinte lógica:
 
--   Verificar se o carro está ligado ou não. - Se o carro **já estiver ligado**, deverá imprimir uma mensagem no console dizendo:
-    `Este carro já está ligado.` - _Se não_ (se o carro não estiver ligado), deverá alterar a propriedade **ligado** para **true**.
+- Verificar se o carro está ligado ou não. - Se o carro **já estiver ligado**, deverá imprimir uma mensagem no console dizendo:
+  `Este carro já está ligado.` - _Se não_ (se o carro não estiver ligado), deverá alterar a propriedade **ligado** para **true**.
 
 **c)** Acrescentar neste objeto carro um membro chamado **desligar** que possuirá como valor uma função que implementará a seguinte lógica:
 
--   Verificar se o carro está ligado ou não. - Se o carro **já estiver desligado**, deverá imprimir uma mensagem no console dizendo:
-    `Este carro já está desligado.` - _Se não_ (se o carro estiver ligado), deverá: - alterar a propriedade **ligado** para **false**. - atribuir valor **0** (zero) à propriedade **velocidade**.
+- Verificar se o carro está ligado ou não. - Se o carro **já estiver desligado**, deverá imprimir uma mensagem no console dizendo:
+  `Este carro já está desligado.` - _Se não_ (se o carro estiver ligado), deverá: - alterar a propriedade **ligado** para **false**. - atribuir valor **0** (zero) à propriedade **velocidade**.
 
 **d)** Acrescentar neste objeto carro um membro chamado **acelerar** que possuirá como valor uma função que implementará a seguinte lógica:
 
--   Verificar se o carro está ligado ou não. - Se o carro **não** estiver ligado, deverá imprimir uma mensagem no console dizendo:
-    `Não é possível acelerar um carro desligado.` - _Se não_ (se o carro estiver ligado), deverá: - **aumentar** em 10 o valor da propriedade **velocidade**
+- Verificar se o carro está ligado ou não. - Se o carro **não** estiver ligado, deverá imprimir uma mensagem no console dizendo:
+  `Não é possível acelerar um carro desligado.` - _Se não_ (se o carro estiver ligado), deverá: - **aumentar** em 10 o valor da propriedade **velocidade**
 
 **d)** Acrescentar neste objeto carro um membro chamado **desacelerar** que possuirá como valor uma função que implementará a seguinte lógica:
 
--   Verificar se o carro está ligado ou não. - Se o carro **não** estiver ligado, deverá imprimir uma mensagem no console dizendo:
-    `Não é possível desacelerar um carro desligado.` - _Se não_ (se o carro estiver ligado), deverá: - **diminuir** 10 do valor da propriedade **velocidade**
+- Verificar se o carro está ligado ou não. - Se o carro **não** estiver ligado, deverá imprimir uma mensagem no console dizendo:
+  `Não é possível desacelerar um carro desligado.` - _Se não_ (se o carro estiver ligado), deverá: - **diminuir** 10 do valor da propriedade **velocidade**
 
 **e)** Em cada um dos 4 métodos (ligar, desligar, acelerar, desacelerar), quando e **apenas** quando alguma propriedade for alterada, imprimir no console uma mensagem mostrando o status atual do carro. Esta mensagem deverá seguir os seguinte formato: "Carro [ligado/desligado]. Velocidade: [velocidade].". Com isto, todos os métodos quando alterarem alguma das propriedades, imprimirá o status atual do carro.
 Exemplos de mensagens
@@ -80,15 +80,15 @@ Após executar os métodos, fique a vontade para testar as execuções de formas
 
 -       Tente revisar os métodos para aplicar a técnica DRY (Don't Repeat Yourself) e excluir (quando possível) toda repetição de código igual ou muito semelhante.
 -       Faça uma segunda validação para permitir que o carro seja desligado **apenas** quando tiver em velocidade zero.
--   Implemente a **função start/stop** no carro, de forma que quando o carro estiver desligado e for acelerado, ele antes de acelerar, liga o carro. O contrário deve ser aplicado para o desacelerar: se o carro for desacelerado e a **nova** velocidade for zero, ele deve ser desligado.
+- Implemente a **função start/stop** no carro, de forma que quando o carro estiver desligado e for acelerado, ele antes de acelerar, liga o carro. O contrário deve ser aplicado para o desacelerar: se o carro for desacelerado e a **nova** velocidade for zero, ele deve ser desligado.
 
 ---
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `lógica` `módulo 1` `exercício de classe` `nodeJS` `funcao` `objetos`
