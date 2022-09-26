@@ -16,7 +16,15 @@ const carro = {
       console.log('Este carro já está desligado.');
     }
   },
+  acelerar: function () {
+    if (this.ligado) {
+      this.velocidade = 10;
+    } else {
+      console.log('Não é possível desacelerar um carro desligado.');
+    }
+  },
 };
 
 carro.ligar();
+carro.acelerar();
 carro.desligar();
