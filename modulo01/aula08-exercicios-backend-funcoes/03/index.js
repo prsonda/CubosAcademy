@@ -33,8 +33,6 @@ const carrinho = {
   },
 };
 
-carrinho.imprimirResumo();
-
 function addProdutoAoCarrinho(carrinho, produto) {
   let encontrado = false;
   for (prod of carrinho.produtos) {
@@ -57,4 +55,13 @@ const novaBermuda = {
 };
 
 addProdutoAoCarrinho(carrinho, novaBermuda);
+
+const novoTenis = {
+  id: 3,
+  nome: 'Tenis',
+  qtd: 1,
+  precoUnit: 10000,
+};
+
+addProdutoAoCarrinho(carrinho, novoTenis);
 carrinho.imprimirResumo();
