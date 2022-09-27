@@ -9,7 +9,9 @@ const contaBancaria = {
       valor: valor,
     });
     console.log(
-      `Deposito de R$${valor / 100} realizado para o cliente: ${this.nome}`
+      `Deposito de R$${(valor / 100).toFixed(2)} realizado para o cliente: ${
+        this.nome
+      }`
     );
   },
   sacar: function (valor) {
@@ -22,12 +24,38 @@ const contaBancaria = {
         valor: valor,
       });
       console.log(
-        `Saque de R$${valor / 100} realizado para o cliente: ${this.nome}`
+        `Saque de R$${(valor / 100).toFixed(2)} realizado para o cliente: ${
+          this.nome
+        }`
       );
     }
   },
-  extrato: function () {},
+  calculaHistorico: function () {
+    let deposito = 0;
+    let saque = 0;
+
+    for (item of this.historicos) {
+      if (item.tipo === 'Depósito') {
+        deposito += item.valor;
+      }
+
+      if (item.tipo === 'Saque') {
+        saque += item.valor;
+      }
+    }
+
+    console.log(`Depósito de $${deposito / 100}`);
+    console.log(`Saque de $${saque / 100}`);
+  },
+  extrato: function () {
+    console.log(
+      `Extrato de ${this.nome} - Saldo: R$${(this.saldo / 100).toFixed(2)}`
+    );
+    console.log('Histórico:');
+    this.calculaHistorico();
+  },
 };
 
 contaBancaria.depositar(10000);
 contaBancaria.sacar(3000);
+contaBancaria.extrato();
