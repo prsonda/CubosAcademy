@@ -26,26 +26,42 @@ const carrinho = {
     const resultado = [valorTotal, somaItens];
     return resultado;
   },
+  calcularDesconto: function () {
+    return desconto;
+  },
+  addProduto: function (produto) {
+    let encontrado = false;
+    for (prod of this.produtos) {
+      let codigo = prod.id;
+      if (produto.id === codigo) {
+        encontrado = true;
+        prod.qtd += produto.qtd;
+      }
+    }
+    if (!encontrado) {
+      carrinho.produtos.push(produto);
+    }
+  },
+  imprimirDetalhes: function () {
+    console.log(`Cliente: ${carrinho.nomeDoCliente}`);
+    console.log();
+    for (item of this.produtos) {
+      console.log(
+        `Item ${item.id} - ${item.nome} - ${item.qtd} und - R$ ${(
+          item.precoUnit / 100
+        ).toFixed(2)}`
+      );
+    }
+    console.log();
+    console.log(`Total de itens: ${this.calcula()[1]} itens`);
+    console.log(`Total a pagar: R$ ${this.calcula()[0].toFixed(2)}`);
+  },
   imprimirResumo: function () {
     console.log(`Cliente: ${carrinho.nomeDoCliente}`);
     console.log(`Total de itens: ${this.calcula()[1]} itens`);
     console.log(`Total a pagar: R$ ${this.calcula()[0].toFixed(2)}`);
   },
 };
-
-function addProdutoAoCarrinho(carrinho, produto) {
-  let encontrado = false;
-  for (prod of carrinho.produtos) {
-    let codigo = prod.id;
-    if (produto.id === codigo) {
-      encontrado = true;
-      prod.qtd += produto.qtd;
-    }
-  }
-  if (!encontrado) {
-    carrinho.produtos.push(produto);
-  }
-}
 
 const novaBermuda = {
   id: 2,
@@ -54,7 +70,7 @@ const novaBermuda = {
   precoUnit: 5000,
 };
 
-addProdutoAoCarrinho(carrinho, novaBermuda);
+carrinho.addProduto(novaBermuda);
 
 const novoTenis = {
   id: 3,
@@ -63,5 +79,5 @@ const novoTenis = {
   precoUnit: 10000,
 };
 
-addProdutoAoCarrinho(carrinho, novoTenis);
-carrinho.imprimirResumo();
+carrinho.addProduto(novoTenis);
+carrinho.imprimirDetalhes();
