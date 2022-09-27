@@ -12,7 +12,21 @@ const contaBancaria = {
       `Deposito de R$${valor / 100} realizado para o cliente: ${this.nome}`
     );
   },
-  sacar: function (valor) {},
+  sacar: function (valor) {
+    if (valor > this.saldo) {
+      console.log(`Saldo insuficiente para o saque de: ${this.nome}`);
+    } else {
+      this.saldo -= valor;
+      this.historicos.push({
+        tipo: 'Saque',
+        valor: valor,
+      });
+      console.log(
+        `Saque de R$${valor / 100} realizado para o cliente: ${this.nome}`
+      );
+    }
+  },
 };
 
 contaBancaria.depositar(10000);
+contaBancaria.sacar(3000);
