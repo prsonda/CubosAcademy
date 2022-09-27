@@ -28,12 +28,12 @@ const test = {
 
 function correctExam(test) {
   let sum = 0;
-  let notePerQuestion = test.value / test.questions.length;
+  let noteByQuestion = test.value / test.questions.length;
   let note = 0;
   for (item of test.questions) {
     if (item.answer === item.correct) {
       sum += 1;
-      note += notePerQuestion;
+      note += noteByQuestion;
     }
   }
   console.log(
