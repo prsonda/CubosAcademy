@@ -26,6 +26,7 @@ const contaBancaria = {
       );
     }
   },
+  extrato: function () {},
 };
 
 contaBancaria.depositar(10000);
