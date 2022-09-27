@@ -57,5 +57,6 @@ const contaBancaria = {
 };
 
 contaBancaria.depositar(10000);
-contaBancaria.sacar(3000);
+contaBancaria.sacar(50000);
+contaBancaria.sacar(5000);
 contaBancaria.extrato();
