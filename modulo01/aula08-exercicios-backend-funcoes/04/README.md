@@ -22,9 +22,9 @@ Sabendo que as transações básicas de uma conta bancária são depositar, saca
 
 **c)** Implemente o método `depositar` de modo que o valor passado como argumento seja um número inteiro que representará o valor a ser depositado em centávos. Esse método precisa realizar as seguintes operações:
 
--   Somar o valor informado como argumento ao saldo atual da conta;
+- Somar o valor informado como argumento ao saldo atual da conta;
 
--   Adicionar um objeto ao array `historicos`. Esse objeto precisa ter o seguinte formato:
+- Adicionar um objeto ao array `historicos`. Esse objeto precisa ter o seguinte formato:
 
 ```javascript=
 {
@@ -33,17 +33,17 @@ Sabendo que as transações básicas de uma conta bancária são depositar, saca
 }
 ```
 
--   Retornar a seguinte mensagem: `Deposito de R$100 realizado para o cliente: Maria`.
+- Retornar a seguinte mensagem: `Deposito de R$100 realizado para o cliente: Maria`.
 
 **d)** Declare um método `sacar` no objeto `contaBancaria` que tenha um argumento `valor`.
 
 **e)** Implemente o método `sacar` de modo que o valor passado como argumento seja um número inteiro que representará o valor a ser sacado em centávos. Esse método precisa realizar as seguintes operações:
 
--   Verificar se o valor é maior que o saldo atual da conta e caso a condição for verdadeira retornar a seguinmte mensagem: `Saldo insuficiente para o saque de: Maria`. Lembrando que, essa condição sendo verdadeira, as demais operações não poderão serem executadas;
+- Verificar se o valor é maior que o saldo atual da conta e caso a condição for verdadeira retornar a seguinmte mensagem: `Saldo insuficiente para o saque de: Maria`. Lembrando que, essa condição sendo verdadeira, as demais operações não poderão serem executadas;
 
--   Subtrair o valor informado como argumento ao saldo atual da conta caso o valor seja menor que o saldo atual da conta;
+- Subtrair o valor informado como argumento ao saldo atual da conta caso o valor seja menor que o saldo atual da conta;
 
--   Adicionar um objeto ao array `historicos`. Esse objeto precisa ter o seguinte formato:
+- Adicionar um objeto ao array `historicos`. Esse objeto precisa ter o seguinte formato:
 
 ```javascript=
 {
@@ -52,7 +52,7 @@ Sabendo que as transações básicas de uma conta bancária são depositar, saca
 }
 ```
 
--   Retornar a seguinte mensagem: `Saque de R$50 realizado para o cliente: Maria`.
+- Retornar a seguinte mensagem: `Saque de R$50 realizado para o cliente: Maria`.
 
 **f)** Declare um método `extrato` no objeto `contaBancaria`. Esse método não receberá argumento.
 
@@ -92,9 +92,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `lógica` `módulo 1` `exercício de classe` `nodeJS` `funcao` `objetos`
