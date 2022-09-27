@@ -12,6 +12,7 @@ const contaBancaria = {
       `Deposito de R$${valor / 100} realizado para o cliente: ${this.nome}`
     );
   },
+  sacar: function (valor) {},
 };
 
 contaBancaria.depositar(10000);
