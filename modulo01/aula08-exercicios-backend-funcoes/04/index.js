@@ -4,10 +4,12 @@ const contaBancaria = {
   historicos: [],
   depositar: function (valor) {
     this.saldo += valor;
+
     this.historicos.push({
       tipo: 'Depósito',
       valor: valor,
     });
+
     console.log(
       `Deposito de R$${(valor / 100).toFixed(2)} realizado para o cliente: ${
         this.nome
@@ -19,10 +21,12 @@ const contaBancaria = {
       console.log(`Saldo insuficiente para o saque de: ${this.nome}`);
     } else {
       this.saldo -= valor;
+
       this.historicos.push({
         tipo: 'Saque',
         valor: valor,
       });
+
       console.log(
         `Saque de R$${(valor / 100).toFixed(2)} realizado para o cliente: ${
           this.nome
