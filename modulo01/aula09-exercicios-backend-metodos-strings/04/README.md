@@ -14,9 +14,9 @@ let email = "      jose@email.com  ";
 
 Antes de salvar as informações, precisamos formatar os dados seguindo as seguintes exigências:
 
--   O padrão do identificador são seis dígitos e caso o número não possua essa quantidade, complete com zero a esquerda;
--   O nome e sobrenome precisam sempre começar com letra maiúscula;
--   O e-mail não pode ter espaços em branco;
+- O padrão do identificador são seis dígitos e caso o número não possua essa quantidade, complete com zero a esquerda;
+- O nome e sobrenome precisam sempre começar com letra maiúscula;
+- O e-mail não pode ter espaços em branco;
 
 Para testar, use o `console.log()` para imprimir cada propriedade do objeto formatado.
 
@@ -64,9 +64,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `módulo 1` `exercícios` `lógica` `nodeJS`
