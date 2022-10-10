@@ -9,15 +9,15 @@ function agendarPaciente(paciente) {
 }
 
 function atenderPaciente(paciente) {
-  for (let i of paciente) {
-    paciente.pop(i);
+  for (let [key, valor] of paciente.entries()) {
+    paciente.splice(key);
   }
 }
 
 function cancelarAtendimento(paciente) {
-  for (let i of paciente) {
-    if (i == 'Joana') {
-      paciente.pop(i);
+  for (let [key, valor] of paciente.entries()) {
+    if (valor == 'Joana') {
+      paciente.splice(key);
     }
   }
 }
