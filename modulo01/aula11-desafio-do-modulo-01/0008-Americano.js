@@ -17,3 +17,6 @@ if (soma > numeros.length) {
 } else {
   console.log(numeros.length);
 }
+
+// não está passando em todos os casos de teste e não consigo identificar o problema
+// passa na maioria mas em 3 testes da erro
