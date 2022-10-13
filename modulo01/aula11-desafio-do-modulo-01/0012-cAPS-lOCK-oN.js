@@ -32,3 +32,5 @@ for (const palavra of lista) {
 }
 
 console.log(texto.trim());
+
+// precisa de melhorias
