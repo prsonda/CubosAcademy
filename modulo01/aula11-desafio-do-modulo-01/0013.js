@@ -8,25 +8,26 @@ const base = entrada[0];
 
 const coordenadas = [];
 
-let resultado = 0;
+// adiciona as coordenadas na variável coordenadas
 for (let index = 1; index < entrada.length; index++) {
   const element = entrada[index].split(',');
-  coordenadas.push({
-    x: parseFloat(element[0]),
-    y: parseFloat(element[1]),
-  });
-
-  resultado += Math.hypot(element[0], element[1]);
-  console.log(resultado);
+  coordenadas.push([parseFloat(element[0]), parseFloat(element[1])]);
 }
 
-let x = 0;
-let y = 0;
-for (const item of coordenadas) {
-  x += item.x;
-  y += item.y;
+let maximo = 0;
+
+// pega a maior distancia atravez da multiplicação e soma das coordenadas
+for (let i = 0; i < base; i++) {
+  for (let j = i + 1; j < base; j++) {
+    let x = coordenadas[i][0] - coordenadas[j][0];
+    let y = coordenadas[i][1] - coordenadas[j][1];
+
+    const result = x * x + y * y;
+
+    maximo = Math.max(maximo, result);
+  }
 }
 
-resultado += Math.hypot(x, y);
-
+// pega a raiz quadrada das distancias
+let resultado = Math.sqrt(maximo);
 console.log(resultado);
