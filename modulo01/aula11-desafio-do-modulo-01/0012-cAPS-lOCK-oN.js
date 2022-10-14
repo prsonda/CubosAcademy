@@ -1,28 +1,17 @@
 const input =
   'cONSIDERAMOS QUE UMA PALAVRA FOI ESCRITA COM cAPS lOCK SE OU TODAS AS SUAS LETRAS FOREM MAIÚSCULAS OU SE A PRIMEIRA FOR MINÚSCULA E TODAS AS OUTRAS MAIÚSCULAS. a CORREÇÃO NESSES CASOS É INVERTER TODAS AS LETRAS.';
 
-const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVXWYZ';
-
 const lista = input.split(' ');
 
 let texto = '';
 
 for (const palavra of lista) {
-  let comeco = '';
-  let resto = '';
+  let comeco = palavra.slice(0, 1);
+  let resto = palavra.slice(1);
 
-  let achei = false;
-  bloco: {
-    for (const letra of alfabeto) {
-      if (palavra.includes(letra)) {
-        achei = true;
-        break bloco;
-      }
-    }
-  }
   if (palavra === palavra.toUpperCase()) {
     texto += palavra.toLowerCase() + ' ';
-  } else if (achei === true) {
+  } else if (comeco === comeco.toLowerCase() && resto === resto.toUpperCase()) {
     comeco = palavra.slice(0, 1).toUpperCase();
     resto = palavra.slice(1).toLowerCase();
     texto += comeco + resto + ' ';
@@ -32,5 +21,3 @@ for (const palavra of lista) {
 }
 
 console.log(texto.trim());
-
-// precisa de melhorias
