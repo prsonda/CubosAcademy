@@ -1,13 +1,20 @@
 const input = 'cubos cuggbyos';
 
-const lista = input.split('\n');
+const lista = input.split(' ');
+
+const codigo = lista[0].split('');
 
 let decifrado = '';
 
-for (const letra of lista[0]) {
+for (const [pos, letra] of codigo.entries()) {
   bloco: {
     for (const senha of lista[1]) {
-      if (letra === senha) {
+      if (pos > 0) {
+        if (letra === senha.slice(letra[pos - 1])) {
+          decifrado += senha;
+          break bloco;
+        }
+      } else if (letra === senha) {
         decifrado += senha;
         break bloco;
       }
