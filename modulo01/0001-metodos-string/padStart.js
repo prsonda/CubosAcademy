@@ -10,6 +10,7 @@
 // }
 
 function imprimirData(dia, mes, ano) {
+  'use strict';
   let diaFormatado = String(dia).padStart(2, '0');
   let mesFormatado = String(mes).padStart(2, '0');
 
