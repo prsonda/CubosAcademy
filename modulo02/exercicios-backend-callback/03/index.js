@@ -1,0 +1,1 @@
+const jogadores = ["Guido", "Dani", "Ruli", "Diego", "Vidal"];
