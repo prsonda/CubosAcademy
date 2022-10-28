@@ -1,12 +1,14 @@
-function tabuada(numero, resultado) {
-  contador = 0;
-  while (contador < 11) {
-    resultado(`${numero} x ${contador} = ${numero * contador}`);
-
-    contador++;
+function tabuada(numero, callback) {
+  let resultado = '';
+  for (let index = 0; index < 11; index++) {
+    resultado += `${numero} x ${index} = ${numero * index} \n`;
   }
+
+  callback(resultado);
 }
 
-tabuada(5, resultado => {
+const resultado = resultado => {
   console.log(resultado);
-});
+};
+
+tabuada(5, resultado);
