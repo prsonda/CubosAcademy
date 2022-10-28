@@ -1,15 +1,23 @@
-const tabuadas = ([tabuada1, tabuada2, tabuada3]) => {};
-
-const tabuada = (tabuadas, resultado) => {
+const tabuada = (tabuadas, callback) => {
   for (const tabuada of tabuadas) {
+    let resultado = '';
+
     for (let index = 0; index < 11; index++) {
-      resultado(`${tabuada} x ${index} = ${tabuada * index}`);
+      if (index < 10) {
+        resultado += `${tabuada} x ${index} = ${tabuada * index} \n`;
+      } else {
+        resultado += `${tabuada} x ${index} = ${tabuada * index}`;
+      }
     }
+
+    callback(resultado);
     console.log('-'.repeat(12));
     console.log();
   }
 };
 
-tabuada([1, 5, 2], resultado => {
+const resultado = resultado => {
   console.log(resultado);
-});
+};
+
+tabuada([1, 5, 2], resultado);
