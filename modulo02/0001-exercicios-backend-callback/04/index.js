@@ -1,7 +1,7 @@
 let tempoParaAlarmarEmSegundos = 10;
 let tempoAlarmandoEmSegundos = 5;
 
-const temporizador = tempoBipando => {
+const temporizador = (tempoBipando, callback) => {
   console.log(
     `Timer iniciado, disparando alarme em ${tempoParaAlarmarEmSegundos} segundos!`
   );
@@ -19,7 +19,11 @@ const temporizador = tempoBipando => {
     const intervalo = setInterval(contagem, 1000);
   };
 
+  callback(tempoEspera);
+};
+
+const tempoEspera = tempoEspera => {
   setTimeout(tempoEspera, tempoParaAlarmarEmSegundos * 1000);
 };
 
-temporizador(tempoAlarmandoEmSegundos);
+temporizador(tempoAlarmandoEmSegundos, tempoEspera);
