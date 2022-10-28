@@ -6,7 +6,7 @@ let numeroDeSonecas = 2;
 const tempo =
   tempoParaAlarmarEmSegundos * 1000 + tempoAlarmandoEmSegundos * 1000 + 100;
 
-function alarme(tempoBipando, callback) {
+const alarme = (tempoBipando, callback) => {
   console.log(
     `Timer iniciado, disparando alarme em ${tempoParaAlarmarEmSegundos} segundos!`
   );
@@ -27,11 +27,11 @@ function alarme(tempoBipando, callback) {
   setTimeout(tempoEspera, tempoParaAlarmarEmSegundos * 1000);
 
   callback();
-}
+};
 
-function soneca() {
+const soneca = () => {
   for (let index = 1; index <= numeroDeSonecas; index++) {
-    function e() {
+    const e = () => {
       console.log(
         `Soneca ativada, próximo alarme em ${tempoSonecaEmSegundos} segundos`
       );
@@ -50,9 +50,9 @@ function soneca() {
       };
 
       setTimeout(tempoEspera, tempoSonecaEmSegundos * 1000);
-    }
+    };
     setTimeout(e, index * tempo);
   }
-}
+};
 
 alarme(tempoAlarmandoEmSegundos, soneca);
