@@ -1,6 +1,6 @@
 const jogadores = ['Guido', 'Dani', 'Ruli', 'Diego', 'Vidal'];
 
-const jogo = jogadores => {
+const jogo = (jogadores, callback) => {
   let contador = 0;
 
   const mensagem = () => {
@@ -14,7 +14,11 @@ const jogo = jogadores => {
   };
   const tempo = (10 / jogadores.length) * 1000;
 
-  const temporizador = setInterval(mensagem, tempo);
+  callback(temporizador, mensagem, tempo);
 };
 
-jogo(jogadores);
+const temporizador = (temporizador, mensagem, tempo) => {
+  temporizador = setInterval(mensagem, tempo);
+};
+
+jogo(jogadores, temporizador);
