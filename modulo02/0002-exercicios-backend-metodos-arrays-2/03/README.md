@@ -9,7 +9,7 @@ A mãe do João deu uma lista de compras para ele ir até o mercado e comprar os
 Faça um programa que use a função `some()` para validar essa lista de compras e caso encontre alguma das duas bebidas imprima `revise sua lista, joão. possui bebida com venda proibida!`, caso contrário, imprima `tudo certo, vamos as compras!`.
 
 ```javascript
-const palavras = ["arroz", "feijão", "carne", "cerveja", "macarrão"]
+const palavras = ['arroz', 'feijão', 'carne', 'cerveja', 'macarrão'];
 ```
 
 Para o exemplo acima, o programa deverá imprimir:
@@ -26,9 +26,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
