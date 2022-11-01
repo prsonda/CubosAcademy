@@ -11,32 +11,32 @@ Com base no array de objetos abaixo filtre os usuários que possuam entre 18 e 6
 ```javascript
 const usuários = [
   {
-    nome: "André",
+    nome: 'André',
     idade: 29,
     habilitado: false,
   },
   {
-    nome: "Marcos",
+    nome: 'Marcos',
     idade: 70,
     habilitado: true,
   },
   {
-    nome: "Ana",
+    nome: 'Ana',
     idade: 35,
     habilitado: true,
   },
   {
-    nome: "Vinícius",
+    nome: 'Vinícius',
     idade: 44,
     habilitado: true,
   },
   {
-    nome: "Carlos",
+    nome: 'Carlos',
     idade: 17,
     habilitado: false,
   },
   {
-    nome: "Maria",
+    nome: 'Maria',
     idade: 19,
     habilitado: true,
   },
@@ -59,9 +59,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
