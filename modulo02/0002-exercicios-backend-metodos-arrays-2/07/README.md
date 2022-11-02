@@ -10,10 +10,10 @@ Crie uma função que localize um endereço em um array através do CEP e imprim
 
 ```javascript
 const endereços = [
-  { cep: 00111222, rua: "Rua dos Artistas" },
-  { cep: 00111333, rua: "Rua Augusta" },
-  { cep: 00222444, rua: "Avenida Paralela" },
-  { cep: 11222333, rua: "Rua Carlos Gomes" },
+  { cep: 00111222, rua: 'Rua dos Artistas' },
+  { cep: 00111333, rua: 'Rua Augusta' },
+  { cep: 00222444, rua: 'Avenida Paralela' },
+  { cep: 11222333, rua: 'Rua Carlos Gomes' },
 ];
 ```
 
@@ -31,9 +31,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
