@@ -9,34 +9,34 @@ Analise o array abaixo e faça um sistema que atenda os requisitos abaixo.
 ```javascript
 const pessoas = [
   {
-    nome: "Antonio",
+    nome: 'Antonio',
     idade: 30,
-    profissao: "Jornalista",
+    profissao: 'Jornalista',
   },
   {
-    nome: "Maria",
+    nome: 'Maria',
     idade: 30,
-    profissao: "Jornalista",
+    profissao: 'Jornalista',
   },
   {
-    nome: "Ana",
+    nome: 'Ana',
     idade: 21,
-    profissao: "Programador",
+    profissao: 'Programador',
   },
   {
-    nome: "Beatriz",
+    nome: 'Beatriz',
     idade: 20,
-    profissao: "Programador",
+    profissao: 'Programador',
   },
   {
-    nome: "José",
+    nome: 'José',
     idade: 32,
-    profissao: "Jornalista",
+    profissao: 'Jornalista',
   },
   {
-    nome: "Marcos",
+    nome: 'Marcos',
     idade: 30,
-    profissao: "Programador",
+    profissao: 'Programador',
   },
 ];
 ```
@@ -101,9 +101,9 @@ Faça commit do resultado.
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
