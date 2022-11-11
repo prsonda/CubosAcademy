@@ -7,13 +7,13 @@ const cidades = [
 ];
 
 const maiorString = (a, b) => {
-  let menor = a;
+  let maior = a;
 
-  if (b.length > menor.length) {
-    menor = b;
+  if (b.length > maior.length) {
+    maior = b;
   }
 
-  return menor;
+  return maior;
 };
 
 let resultado = cidades.reduce(maiorString);
