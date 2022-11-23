@@ -11,7 +11,7 @@ O servidor deverá utilizar a porta 8000 e ser acessado através de `http://loca
 Para todas as letras a seguir do exercício, utilizaremos o array **jogadores** abaixo:
 
 ```javascript
-const jogadores = ["José", "Maria", "João", "Marcos", "Fernanda"];
+const jogadores = ['José', 'Maria', 'João', 'Marcos', 'Fernanda'];
 ```
 
 Todos os passos (letras) do exercício deverão ser implementadas no mesmo script do servidor.
@@ -52,7 +52,7 @@ O servidor deverá remover o jogador da posição 2 do array e retornar ao naveg
 Desta forma, após a remoção do jogador no índice 2 do array `jogadores`, que é `João`, deverá ser retornado ao navegador o array assim:
 
 ```javascript
-["José","Maria","Marcos","Fernanda"]
+['José', 'Maria', 'Marcos', 'Fernanda'];
 ```
 
 Caso não exista jogador na posição (índice) informado pela requisição, nenhum jogador deverá ser removido do array e deverá ser retornada a resposta com a seguinte mensagem:
@@ -86,7 +86,7 @@ Se for requisitado ao servidor este recurso com os seguintes parâmetros:
 Considerando o estado inicial do array, após a adição da nova jogadora, deverá ser retornado ao navegador o seguinte array:
 
 ```javascript
-["José","Maria","João","Marcos","Fernanda","Luiza"]
+['José', 'Maria', 'João', 'Marcos', 'Fernanda', 'Luiza'];
 ```
 
 Se for adicionado o parametro **indice** na requisição, como no exemplo abaio:
@@ -96,7 +96,7 @@ Se for adicionado o parametro **indice** na requisição, como no exemplo abaio:
 Considerando o estado inicial do array, após a adição da nova jogadora, deverá ser retornado ao navegador o seguinte array:
 
 ```javascript
-["José","Maria","Luiza","João","Marcos","Fernanda"]
+['José', 'Maria', 'Luiza', 'João', 'Marcos', 'Fernanda'];
 ```
 
 Se for adicionado o parametro **indice** com um valor de índice não existente no array, ficando assim:
@@ -115,9 +115,9 @@ O índice informado (80) não existe no array. Novo jogador não adicionado.
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
