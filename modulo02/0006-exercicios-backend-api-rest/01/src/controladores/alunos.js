@@ -1,4 +1,4 @@
-let { alunos, identificadorAluno } = require('../dados/bancoAlunos');
+let { alunos, identificadorAluno } = require('../dados/alunos');
 
 const listarAlunos = (req, res) => {
   return res.status(200).json(alunos);
@@ -57,8 +57,35 @@ const cadastrarAluno = (req, res) => {
   res.status(201).json();
 };
 
+const deletraAlunoId = (req, res) => {
+  const { id } = req.params;
+
+  let aluno = alunos.find(aluno => {
+    return Number(id) === aluno.id;
+  });
+
+  alunos = alunos.filter(aluno => {
+    if (Number(id) !== aluno.id) {
+      return aluno;
+    }
+  });
+
+  if (isNaN(id) || Number(id) < 0) {
+    return res.status(400).json({ mensagem: 'Id inválido' });
+  }
+
+  if (!aluno) {
+    return res
+      .status(404)
+      .json({ mensagem: 'Nenhum aluno encontrado com esse id' });
+  }
+
+  return res.status(200).json(aluno);
+};
+
 module.exports = {
   listarAlunos,
   listarAlunoId,
   cadastrarAluno,
+  deletraAlunoId,
 };
