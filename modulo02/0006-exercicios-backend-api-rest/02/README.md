@@ -6,7 +6,8 @@
 
 Neste exercício deveremos criar o back-end de um sistema para controle de convidados de evento. Este controle de convidados deverá ser executado em um servidor nodejs e deverá ser acessado através do endereço http://localhost:3000.
 
-O sistema deverá possuir uma lista de nomes dos convidados, e funcionalidades para poder: 
+O sistema deverá possuir uma lista de nomes dos convidados, e funcionalidades para poder:
+
 - **consultar a lista** de convidados **inteira**
 
 - **consultar** se **um nome específico** existe na lista
@@ -34,26 +35,19 @@ Caso seja criado um array inicial no servidor conforme abaixo:
 
 ```javascript
 const convidados = [
-    "Carlos",
-    "Amanda",
-    "Fernanda",
-    "Juliana",
-    "Lucas",
-    "Roberto",
-]
+  'Carlos',
+  'Amanda',
+  'Fernanda',
+  'Juliana',
+  'Lucas',
+  'Roberto',
+];
 ```
 
 Ao requisitar esta funcionalidade, deverá ser retornado:
 
 ```javascript
-[
-  "Carlos",
-  "Amanda",
-  "Fernanda",
-  "Juliana",
-  "Lucas",
-  "Roberto"
-]
+['Carlos', 'Amanda', 'Fernanda', 'Juliana', 'Lucas', 'Roberto'];
 ```
 
 **b) Consultar se existe um nome específico na lista de convidados**
@@ -70,13 +64,13 @@ Caso seja criado um array inicial no servidor conforme abaixo
 
 ```javascript
 const convidados = [
-    "Carlos",
-    "Amanda",
-    "Fernanda",
-    "Juliana",
-    "Lucas",
-    "Roberto",
-]
+  'Carlos',
+  'Amanda',
+  'Fernanda',
+  'Juliana',
+  'Lucas',
+  'Roberto',
+];
 ```
 
 Ao requisitar o recurso **convidados** com **GET** `http://localhost:3000/convidados?nome=Renato`, deverá ser retornado o seguinte objeto:
@@ -109,20 +103,20 @@ Caso seja criado um array inicial no servidor conforme abaixo
 
 ```javascript
 const convidados = [
-    "Carlos",
-    "Amanda",
-    "Fernanda",
-    "Juliana",
-    "Lucas",
-    "Roberto",
-]
+  'Carlos',
+  'Amanda',
+  'Fernanda',
+  'Juliana',
+  'Lucas',
+  'Roberto',
+];
 ```
 
 Ao enviar uma requisição **POST** `http://localhost:3000/convidados` com o objeto a seguir no body (corpo) da requisição:
 
 ```json
 {
-	"nome": "Amanda"
+  "nome": "Amanda"
 }
 ```
 
@@ -130,7 +124,7 @@ Deverá ser retornada uma mensagem com o seguinte objeto no conteúdo JSON no bo
 
 ```json
 {
-    "mensagem": "O nome do convidado a ser adicionado já existe na lista. Caso queria adicionar outro convidado de mesmo nome, favor fornecer o sobrenome também."
+  "mensagem": "O nome do convidado a ser adicionado já existe na lista. Caso queria adicionar outro convidado de mesmo nome, favor fornecer o sobrenome também."
 }
 ```
 
@@ -142,7 +136,7 @@ Se for enviada uma requisição **POST** `http://localhost:3000/convidados` com 
 
 ```json
 {
-	"nome": "Gabriel"
+  "nome": "Gabriel"
 }
 ```
 
@@ -150,7 +144,7 @@ Deverá ser retornada uma resposta com o seguinte objeto **JSON** no body (corpo
 
 ```json
 {
-    "mensagem": "Convidado adicionado."
+  "mensagem": "Convidado adicionado."
 }
 ```
 
@@ -170,13 +164,13 @@ Caso seja criado um array inicial no servidor conforme abaixo
 
 ```javascript
 const convidados = [
-    "Carlos",
-    "Amanda",
-    "Fernanda",
-    "Juliana",
-    "Lucas",
-    "Roberto",
-]
+  'Carlos',
+  'Amanda',
+  'Fernanda',
+  'Juliana',
+  'Lucas',
+  'Roberto',
+];
 ```
 
 Ao enviar uma requisição **DELETE** `http://localhost:3000/convidados/Fernando`
@@ -185,7 +179,7 @@ Deverá ser retornada uma mensagem com o seguinte objeto no conteúdo JSON no bo
 
 ```json
 {
-    "mensagem": "O nome do convidado a ser removido não existe na lista. Nenhum convidado foi removido."
+  "mensagem": "O nome do convidado a ser removido não existe na lista. Nenhum convidado foi removido."
 }
 ```
 
@@ -199,7 +193,7 @@ Deverá ser retornada uma resposta com o seguinte objeto **JSON** no body (corpo
 
 ```json
 {
-    "mensagem": "Convidado removido."
+  "mensagem": "Convidado removido."
 }
 ```
 
@@ -209,9 +203,9 @@ Após criar todas as funcionalidades, teste todas elas em ordens variadas para v
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
