@@ -1,3 +1,4 @@
+// banco de dados de simulação
 const banco = {
   idendificador: 3,
   livros: [

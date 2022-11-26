@@ -1,5 +1,6 @@
 const senhaValida = 'cubos123';
 
+// função para validar senhas
 const validar = (req, res, next) => {
   const { senha } = req.query;
 
