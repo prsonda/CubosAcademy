@@ -11,12 +11,6 @@ const listarLivroId = (req, res) => {
     return Number(id) === livro.id;
   });
 
-  if (Number(id) < 0 || isNaN(id)) {
-    return res.status(400).json({
-      mensagem: 'O valor do parâmetro ID da URL não é um número válido.',
-    });
-  }
-
   if (!livroId) {
     return res.status(404).json({
       mensagem: 'Não existe livro para o ID informado.',
