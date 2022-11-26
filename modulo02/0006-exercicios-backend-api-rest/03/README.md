@@ -12,24 +12,25 @@ Portanto no servidor deverá existir um array como no exemplo abaixo:
 
 ```javascript
 const livros = [
-    {
-        id: 1,
-        titulo: "A Odisséia de Jonas",
-        autor: "Thomas Crawling",
-        ano: 2001,
-        numPaginas: 197,
-    },
-    {
-        id: 2,
-        titulo: "Jonas e a sociedade escondida",
-        autor: "Claire Crawling",
-        ano: 2004,
-        numPaginas: 158,
-    },
-]
+  {
+    id: 1,
+    titulo: 'A Odisséia de Jonas',
+    autor: 'Thomas Crawling',
+    ano: 2001,
+    numPaginas: 197,
+  },
+  {
+    id: 2,
+    titulo: 'Jonas e a sociedade escondida',
+    autor: 'Claire Crawling',
+    ano: 2004,
+    numPaginas: 158,
+  },
+];
 ```
 
 O sistema da biblioteca deverá também possuir os principais métodos para:
+
 - **consultar a coleção**
 
 - **consultar um livro através do ID**
@@ -52,20 +53,20 @@ Portanto, considerando o array de exemplo do início do exercício, ao requisita
 ```javascript
 [
   {
-      id: 1,
-      titulo: "A Odisséia de Jonas",
-      autor: "Thomas Crawling",
-      ano: 2001,
-      numPaginas: 197,
+    id: 1,
+    titulo: 'A Odisséia de Jonas',
+    autor: 'Thomas Crawling',
+    ano: 2001,
+    numPaginas: 197,
   },
   {
-      id: 2,
-      titulo: "Jonas e a sociedade escondida",
-      autor: "Claire Crawling",
-      ano: 2004,
-      numPaginas: 158,
+    id: 2,
+    titulo: 'Jonas e a sociedade escondida',
+    autor: 'Claire Crawling',
+    ano: 2004,
+    numPaginas: 158,
   },
-]
+];
 ```
 
 **b) Consulta de um livro por ID**
@@ -178,7 +179,7 @@ Portanto, considerando o array de exemplo do exercício, quando for enviada uma 
 
 ```json
 {
-	"titulo": "Jonas, o Guerreiro"
+  "titulo": "Jonas, o Guerreiro"
 }
 ```
 
@@ -230,9 +231,9 @@ Após a criação de todos os métodos, teste todos eles em ordens variadas para
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [x] Resolver o exercício revendo a aula se necessário
+- [x] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [x] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [x] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
