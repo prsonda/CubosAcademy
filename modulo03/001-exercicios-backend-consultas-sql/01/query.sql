@@ -27,3 +27,9 @@ select distinct compositor from musicas where compositor is not null;
 select distinct compositor, composicao from musicas;
 
 select * from musicas where compositor like 'Bra%';
+
+select * from musicas where ritmo like '%troppo';
+
+select * from musicas where composicao ilike '%quartet%';
+
+select * from musicas where composicao not ilike '%quintet%';
