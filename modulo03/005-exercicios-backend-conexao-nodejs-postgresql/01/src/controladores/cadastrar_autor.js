@@ -14,9 +14,9 @@ const cadastrarAutor = async (req, res) => {
       );
 
       const mostrarAutor = await pool.query(
-        `select * from autores where nome = '${autor.nome}'`
+        `select * from autores order by id desc limit 1`
       );
-      return res.status(200).json(mostrarAutor.rows);
+      return res.status(200).json(mostrarAutor.rows[0]);
     }
   } catch (error) {
     console.log(error.message);

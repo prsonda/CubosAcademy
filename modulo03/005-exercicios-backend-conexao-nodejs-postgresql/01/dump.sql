@@ -11,6 +11,6 @@ create table livros(
     nome text not null,
     genero text,
     editora text,
-    data_publicacao date,
+    data_publicacao text,
   	id_autor int references autores(id)
 );
