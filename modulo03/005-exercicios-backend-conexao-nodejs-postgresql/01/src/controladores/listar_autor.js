@@ -1,45 +1,40 @@
 const pool = require("../banco/conectar_banco");
 
 const listarAutores = async (req, res) => {
+  const { id } = req.params;
+
   try {
-    const mostrarAutor = await pool.query(
-      `select * from autores where id = ${req.params.id}`
-    );
+    const query = `
+            select a.id, a.nome, a.idade, l.id as livro_id, l.nome as livro_nome,
+            l.genero as livro_genero, l.editora as livro_editora, 
+            l.data_publicacao as livro_data_publicacao 
+            from autores a left join livros l 
+            on a.id = l.autor_id where a.id = $1
+        `;
+    const { rowCount, rows } = await pool.query(query, [id]);
 
-    const mostrarlivrosAutor = await pool.query(
-      `select * from livros where id_autor = ${req.params.id}`
-    );
-
-    const autorEncontrado = mostrarAutor.rows.find((autor) => {
-      if (!autor) {
-        return undefined;
-      }
-
-      return autor;
-    });
-
-    if (!autorEncontrado) {
-      return res.status(404).json({
-        mensagem: "Autor não encontrado",
-      });
+    if (rowCount === 0) {
+      return res.status(404).json({ mensagem: "O autor não existe" });
     }
 
-    const autor = mostrarAutor.rows[0];
+    const livros = rows.map((livro) => {
+      return {
+        id: livro.livro_id,
+        nome: livro.livro_nome,
+        genero: livro.livro_genero,
+        editora: livro.livro_editora,
+        data_publicacao: livro.livro_data_publicacao,
+      };
+    });
 
-    const resultado = {
-      id: autor.id,
-      nome: autor.nome,
-      idade: autor.idade,
-      livros: mostrarlivrosAutor.rows,
+    const autor = {
+      id: rows[0].id,
+      nome: rows[0].nome,
+      idade: rows[0].idade,
+      livros,
     };
 
-    // não é possível usar o join pois a tabela autores e livros tem a mesma coluna nome, ficando apenas uma, a outra é suprimida.
-
-    // const mostrar = await pool.query(
-    //   `SELECT * FROM autores JOIN livros ON id_autor = ${req.params.id};`
-    // );
-
-    return res.status(200).json(resultado);
+    return res.json(autor);
   } catch (err) {
     console.log(err.message);
   }

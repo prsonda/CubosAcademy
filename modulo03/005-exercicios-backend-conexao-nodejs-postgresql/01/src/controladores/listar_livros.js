@@ -1,39 +1,32 @@
 const pool = require("../banco/conectar_banco");
 
 const listarLivros = async (req, res) => {
-  const pegarLivros = await pool.query("select * from livros");
+  try {
+    const query = `
+            select l.id, l.nome, l.genero, l.editora, l.data_publicacao,
+            l.autor_id, a.nome as autor_nome, a.idade as autor_idade 
+            from livros l left join autores a 
+            on l.autor_id = a.id
+        `;
 
-  const pegarAutores = await pool.query("select * from autores");
+    const { rows } = await pool.query(query);
 
-  //colunas com nomes iguais, sendo suprimida a primeira
-
-  //   const mortrarLivros = await pool.query(
-  //     "SELECT * FROM livros JOIN  autores ON id_autor = autores.id;"
-  //   );
-
-  const livro = pegarLivros.rows;
-
-  const resultado = livro.map((livro) => {
-    const autor = pegarAutores.rows.find((autor) => {
-      if (autor.id === livro.id_autor) {
-        return autor;
-      }
+    const livros = rows.map((livro) => {
+      const { autor_id, autor_nome, autor_idade, ...dadosLivro } = livro;
+      return {
+        ...dadosLivro,
+        autor: {
+          id: autor_id,
+          nome: autor_nome,
+          idade: autor_idade,
+        },
+      };
     });
-    return {
-      id: livro.id,
-      nome: livro.nome,
-      genero: livro.genero,
-      editora: livro.editora,
-      data_publicacao: livro.data_publicacao,
-      autor: {
-        id: autor.id,
-        nome: autor.nome,
-        idade: autor.idade,
-      },
-    };
-  });
 
-  return res.status(200).json(resultado);
+    return res.json(livros);
+  } catch (error) {
+    return res.status(500).json({ mensagem: "Erro interno do servidor" });
+  }
 };
 
 module.exports = listarLivros;
