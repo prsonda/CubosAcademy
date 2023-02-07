@@ -5,7 +5,7 @@ create table usuarios(
     nome text not null,
     email text unique not null,
     senha text not null
-)
+);
 
 create table pokemons(
 	id serial primary key,
@@ -14,5 +14,5 @@ create table pokemons(
   habilidades text not null,
   imagem text,
   apelido text
-)
+);
 
