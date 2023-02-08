@@ -1,10 +1,13 @@
 import { Request, Response } from "express";
 import { pool } from "../conection";
+const bcrypt = require("bcrypt");
 
 export const createUser = async (req: Request, res: Response) => {
   const { name, email, password } = req.body;
 
   try {
+    const passwordEncrypted = await bcrypt.hash(password, 10);
+
     const consultUser = await pool.query(
       "select * from usuarios where email = $1",
       [email]
@@ -13,7 +16,7 @@ export const createUser = async (req: Request, res: Response) => {
     if (consultUser.rowCount < 1) {
       const createNewUser = await pool.query(
         "insert into usuarios(nome, email, senha) values($1, $2, $3) returning *",
-        [name, email, password]
+        [name, email, passwordEncrypted]
       );
 
       return res.status(201).json(createNewUser.rows[0]);
