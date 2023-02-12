@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { listar } from "./controlers/listar";
+import { consultCompanies } from "./controlers/consult-companies";
 
 export const routes = Router();
 
-routes.get("/", listar);
+routes.get("/empresas/:dominioEmpresa", consultCompanies);
