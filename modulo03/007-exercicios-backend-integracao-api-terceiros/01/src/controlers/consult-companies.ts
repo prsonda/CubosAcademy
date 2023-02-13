@@ -26,7 +26,8 @@ export const consultCompanies = async (req: Request, res: Response) => {
 
 		return res.status(200).json(response.data);
 	} catch (error) {
-		console.log(error);
+		const erro = error as Error;
+		console.log(erro.message);
 		return res.status(500).json({ message: "Erro de servidor" });
 	}
 };
