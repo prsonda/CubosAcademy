@@ -1,17 +1,17 @@
-const { Pool } = require('pg');
+require("dotenv").config();
 
-const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'market_cubos',
-    password: 'postgres',
-    port: 5432
+const knex = require("knex")({
+  client: "pg",
+  connection: {
+    host: process.env.DATABASE_HOST,
+    port: process.env.DATABASE_PORT,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE_NAME,
+  },
+  pool: { min: 0, max: 10 },
 });
 
-const query = (text, param) => {
-    return pool.query(text, param);
-}
-
 module.exports = {
-    query
-}
+  knex,
+};
